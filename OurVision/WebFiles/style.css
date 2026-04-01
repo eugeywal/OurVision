@@ -1,43 +1,97 @@
+/* إعدادات الخطوط والخلفية العامة */
 body {
-    background-color: black;
-    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f0f 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* .pageTitle {
-    color: white;
-    font-style: white;
-} */
+.main-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
 
+/* العنوان الرئيسي */
 .pageTitle {
-    color: white;
-    font-style: italic;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pageTitle span {
     font-size: 100px;
-    font: bold;
-    text-align: center;
+    color: palevioletred; /* لمسة لون أحمر مميزة */
+    -webkit-text-fill-color: palevioletred;
 }
 
-.hero-url {
-    color: white;
-    font-style: italic;
-    font-size: 20px;
-    font: bold;
-    text-align: center;
+/* تنظيم مجموعات الحقول */
+.form-group {
+    margin-bottom: 25px;
+    text-align:  left;
 }
 
-.hero-fileUpload {
-    color: white;
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    font-size: 1.25rem;
+    color: whitesmoke;
     font-style: italic;
-    font-size: 20px;
-    font: bold;
-    text-align: center;
-
 }
 
-.hero-driveFileUpload {
+/* تصميم خانات الإدخال */
+input[type="url"], 
+input[type="file"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 80px;
+    border: 1px solid #333;
+    background: #111;
     color: white;
-    font-style: italic;
-    font-size: 20px;
-    font: bold;
-    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
 
+input[type="url"]:focus {
+    border-color: #ff4d4d;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
+}
+
+/* تصميم الزر الاحترافي */
+.sub {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #db7093, #db7093);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+.sub:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.sub:active {
+    transform: translateY(0);
 }

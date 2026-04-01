@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>ourVision - Professional Upload</title>
 </head>
 <body>
-    <h1 class="pageTitle">Hola in ourVision</h1>
-    <form action="">
-        <div class="hero-url">
-        <label for="URL">Enter URL here</label>
-        <input type="url" name="Url" id="URL">
-        </div>
-        <br><br>
-        <div class="hero-fileUpload">
-        <label for="fileUpload">Upluad video here</label>
-        <input type="file" name="fileUpload" id="fileUpload">
-        </div>
-        <br><br>
-        <div class="hero-driveFileUpload">
-        <label for="driveFileUpload">Upluad video from drive</label>
-        <input type="file" name="driveFileUpload" id="driveFileUpload">
-        </div>
-        <br><br>
+    <div class="main-container">
+        <h1 class="pageTitle">Hola in <span>OurVision</span></h1>
+        
+        <form action="" class="upload-form">
+            <div class="form-group">
+                <label for="URL">YouTube Video URL</label>
+                <input type="url" name="Url" id="URL" placeholder="https://example.com/video">
+            </div>
 
-    </form>
+            <div class="form-group">
+                <label for="fileUpload">Upload Local Video</label>
+                <input type="file" name="fileUpload" id="fileUpload">
+            </div>
+
+            <div class="form-group">
+                <label for="driveFileUpload">Upload Drived Video Google Drive</label>
+                <input type="file" name="driveFileUpload" id="driveFileUpload">
+            </div>
+
+            <button type="submit" class="sub">Go</button>
+        </form>
+    </div>
 </body>
 </html>
